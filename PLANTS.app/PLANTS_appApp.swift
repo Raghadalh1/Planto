@@ -8,10 +8,16 @@
 import SwiftUI
 
 @main
-struct PLANTS_appApp: App {
+struct PlantsAppApp: App {
+
+    init() {
+        // يفعّل مدير الإشعارات من أول لحظة (عشان تظهر الإشعارات والتطبيق مفتوح)
+        _ = NotificationManager.shared
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyPlantsView()
         }
     }
 }

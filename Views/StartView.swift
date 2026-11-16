@@ -1,6 +1,5 @@
 import SwiftUI
 
-// MARK: - شاشة البداية: Start your plant journey!
 struct StartView: View {
     let onStart: () -> Void
 
@@ -8,7 +7,7 @@ struct StartView: View {
         VStack(spacing: 0) {
             Spacer()
 
-            Image("plants 1")
+            Image("plants")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 300, height: 300)
